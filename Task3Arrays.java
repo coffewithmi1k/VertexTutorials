@@ -14,7 +14,7 @@ public class Task3Arrays {
             int n = scan.nextInt();
             if(n>3) {
                 m = n;
-                System.out.println("Lilia go Home! Have a nice weekend!");
+
                 return m;
 
 
@@ -39,6 +39,15 @@ return m;
     public static void main(String[]args){
 
 int a = getSizeOfArray();
+//  System.out.println(a);
+        System.out.println();
+        System.out.println("Here your first Array list");
+        System.out.println();
+        int[] array = new int[a];
+        for(int i=0;i<array.length;i++){
+            array[i]=(int)(Math.random()*a);
+            System.out.print(array[i]+" ");
+        }
 
     }
 }
